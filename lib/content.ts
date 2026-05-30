@@ -170,6 +170,115 @@ export const PRICING = {
   },
 };
 
+export const HELP_CENTER = {
+  categories: [
+    {
+      title: "Primeiros passos",
+      slug: "primeiros-passos",
+      topics: [
+        {
+          question: "O que é a ContrataPJ?",
+          answer:
+            "É uma plataforma para gestão de prestadores de serviço. Ela organiza a contratação, o envio e aprovação de notas fiscais, os pagamentos e os contratos digitais — tudo em um só lugar, com controle total e segurança.",
+        },
+        {
+          question: "Para que tipo de empresa a ContrataPJ é indicada?",
+          answer:
+            "Se você contrata prestadores de serviço e quer evitar bagunça com notas, e-mails soltos, planilhas, erros de pagamento e minimizar riscos, a plataforma é pra você. Vale tanto pra startups quanto pra empresas mais estruturadas.",
+        },
+        {
+          question: "Quanto tempo leva para começar a usar?",
+          answer:
+            "Como empresa contratante, você pode se cadastrar e receber o login na hora. Depois de cadastrar o pagamento, já pode subir os prestadores e começar a operar. O onboarding é simples e com apoio da nossa equipe.",
+        },
+        {
+          question: "A ContrataPJ oferece onboarding ou suporte na implantação?",
+          answer:
+            "Sim. Nossa equipe acompanha o processo de implantação, ajuda a configurar a conta e garante que você esteja operando com segurança desde o primeiro dia.",
+        },
+      ],
+    },
+    {
+      title: "Contratos e Jurídico",
+      slug: "contratos-e-juridico",
+      topics: [
+        {
+          question: "A ContrataPJ ajuda com a parte jurídica da contratação?",
+          answer:
+            "Sim. Você pode gerar contratos digitais personalizados e com validade jurídica, além de garantir rastreabilidade e histórico de aprovações. Isso reduz muito o risco de passivo trabalhista por vínculo indevido.",
+        },
+        {
+          question: "A plataforma cuida da assinatura dos contratos também?",
+          answer:
+            "Sim! Dá pra assinar digitalmente os contratos direto pela plataforma, com validade jurídica. Nada de papelada voando por aí.",
+        },
+        {
+          question: "O sistema é seguro e está em conformidade com a LGPD?",
+          answer:
+            "Sim. A plataforma segue as diretrizes da LGPD, com criptografia, autenticação e controle de acesso por perfil. Seus dados (e os dos seus prestadores) estão protegidos.",
+        },
+        {
+          question: "Como a plataforma reduz o risco de vínculo empregatício?",
+          answer:
+            "A ContrataPJ centraliza contratos, registros de serviços e aprovações, criando uma trilha documental robusta que demonstra a natureza independente da relação com o prestador — um argumento sólido em caso de auditoria ou processo trabalhista.",
+        },
+      ],
+    },
+    {
+      title: "Pagamentos e Notas Fiscais",
+      slug: "pagamentos-e-notas-fiscais",
+      topics: [
+        {
+          question: "Como funciona o processo de pagamento de PJs pela plataforma?",
+          answer:
+            "Você aprova as notas pela plataforma e gera uma remessa. A gente organiza tudo num boleto único, e depois do pagamento, os valores são repassados automaticamente aos prestadores.",
+        },
+        {
+          question: "Preciso mudar minha forma de pagamento ou sistema financeiro atual?",
+          answer:
+            "Não. A plataforma se adapta ao seu processo. Você pode continuar pagando via boleto, transferência ou Pix — e usar os dados que já usa no dia a dia. A diferença é que agora tudo fica centralizado e rastreável.",
+        },
+        {
+          question: "Quais são os métodos de pagamento aceitos?",
+          answer:
+            "Aceitamos pagamento via cartão de crédito, com cobrança mensal e sem comprometer o seu limite. Simples e direto.",
+        },
+        {
+          question: "Como funciona o recebimento das notas fiscais dos prestadores?",
+          answer:
+            "O prestador emite a nota fiscal e faz o upload direto na plataforma. Você recebe uma notificação, analisa e aprova (ou solicita correção). Tudo registrado, sem e-mails perdidos.",
+        },
+      ],
+    },
+    {
+      title: "Planos e Suporte",
+      slug: "planos-e-suporte",
+      topics: [
+        {
+          question: "Qual o custo da ContrataPJ?",
+          answer:
+            "O modelo é por assinatura mensal, com planos que variam conforme o volume de prestadores ativos. Você paga e utiliza no mês subsequente — sem surpresas ou taxas escondidas.",
+        },
+        {
+          question: "Quais são os planos disponíveis na ContrataPJ? Como escolher o melhor?",
+          answer:
+            "A ContrataPJ oferece dois planos: Starter e Plus. A recomendação é avaliar o volume de prestadores e o nível de automação desejado. Se precisar de ajuda, nosso time comercial pode orientar na escolha ideal.",
+        },
+        {
+          question: "Como faço para entrar em contato com o suporte ao cliente?",
+          answer:
+            "Nosso suporte funciona 8 horas por dia, 5 dias por semana. Você pode falar com a gente direto na plataforma via chat ao vivo, por e-mail ou consultar nossa central de ajuda com artigos atualizados.",
+        },
+        {
+          question: "É possível cancelar a qualquer momento?",
+          answer:
+            "Sim. Não há fidelidade obrigatória. Você pode cancelar a assinatura a qualquer momento sem multas ou burocracia.",
+        },
+      ],
+    },
+  ],
+} as const;
+
 export const FEATURES_PAGE = {
   hero: {
     title: "Recursos e funcionalidades da ContrataPJ",
