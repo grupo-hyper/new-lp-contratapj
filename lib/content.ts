@@ -121,8 +121,53 @@ export const HOME = {
 } as const;
 
 export const PRICING = {
-  // To be filled in Task 5.2 (Planos page) after scraping prices from original
-  plans: [] as Array<{ name: string; price: string; features: string[]; ctaLabel: string }>,
+  hero: {
+    title: "Escolha o melhor plano para você",
+    subtitle: "Planos flexíveis por prestador ativo. Sem taxas escondidas.",
+  },
+  plans: [
+    {
+      name: "Starter",
+      price: "R$ 29,90",
+      priceDetail: "por PJ/mês",
+      tagline: "Ótimo desempenho com todas as funcionalidades",
+      features: [
+        "Criação e automatização de contratos",
+        "Assinatura digital de contratos",
+        "Renovações dos contratos",
+        "Recebimento de notas fiscais dentro da plataforma",
+        "Monitoramento ativo dos seus PJs",
+        "Validações do CNPJ de seus prestadores",
+        "Pagamento em remessa de seus prestadores",
+        "Integrações com ERP Financeiro",
+      ],
+      ctaLabel: "Solicitar Demonstração",
+      highlighted: false,
+    },
+    {
+      name: "Plus",
+      price: "R$ 45,90",
+      priceDetail: "por PJ/mês",
+      tagline: "Ideal para empresas que precisam de uma atenção maior nos contratos",
+      features: [
+        "Todas as funcionalidades do plano Starter",
+        "Análise de contratos",
+        "Criação de contratos",
+        "Análise da relação da empresa com o PJ",
+        "Consultoria de governança PJ",
+      ],
+      ctaLabel: "Solicitar Demonstração",
+      highlighted: true,
+    },
+  ],
+  enterprise: {
+    title: "Mais de 50 PJs?",
+    subtitle: "Condições Exclusivas para Você!",
+    description:
+      "Garanta descontos especiais nos planos Starter ou Plus para contratação anual e otimize a gestão PJ da sua empresa com menos riscos e mais segurança jurídica.",
+    perks: ["Reduza riscos trabalhistas", "Economize com eficiência", "Gestão simplificada"],
+    ctaLabel: "Fale com um Especialista",
+  },
 };
 
 export const FEATURES_PAGE = {
