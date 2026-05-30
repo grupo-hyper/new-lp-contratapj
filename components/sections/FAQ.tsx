@@ -8,7 +8,7 @@ import { HOME } from "@/lib/content";
 
 export function FAQ() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 md:py-20 bg-white">
       <div className="container mx-auto px-4 max-w-3xl">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-slate-900">
           Perguntas frequentes

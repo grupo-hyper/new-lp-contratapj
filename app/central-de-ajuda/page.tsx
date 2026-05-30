@@ -17,7 +17,7 @@ export default function CentralDeAjudaPage() {
   return (
     <main>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#5A4FF3] to-[#7B6FF6] py-20 text-white">
+      <section className="bg-gradient-to-br from-[#5A4FF3] to-[#7B6FF6] py-12 md:py-20 text-white">
         <div className="container mx-auto px-4 max-w-3xl text-center">
           <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">
             Central de Ajuda
@@ -29,7 +29,7 @@ export default function CentralDeAjudaPage() {
       </section>
 
       {/* Categories */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-10 md:py-16 bg-slate-50">
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="space-y-12">
             {HELP_CENTER.categories.map((category, catIdx) => (
@@ -59,7 +59,7 @@ export default function CentralDeAjudaPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-white text-center">
+      <section className="py-10 md:py-16 bg-white text-center">
         <div className="container mx-auto px-4 max-w-xl">
           <h3 className="font-heading text-2xl font-bold text-slate-900 mb-3">
             Ainda tem dúvidas?

@@ -12,7 +12,7 @@ export default function FuncionalidadesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-brand-900 py-20 text-white text-center">
+      <section className="bg-brand-900 py-12 md:py-20 text-white text-center">
         <div className="container mx-auto px-4">
           <h1 className="font-heading text-4xl md:text-5xl font-bold">
             {FEATURES_PAGE.hero.title}
@@ -30,7 +30,7 @@ export default function FuncionalidadesPage() {
           <section
             key={section.id}
             id={section.id}
-            className={`py-20 ${index % 2 === 0 ? "bg-white" : "bg-slate-50"}`}
+            className={`py-12 md:py-20 ${index % 2 === 0 ? "bg-white" : "bg-slate-50"}`}
           >
             <div className="container mx-auto px-4">
               <div

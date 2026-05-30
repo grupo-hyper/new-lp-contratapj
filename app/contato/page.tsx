@@ -13,7 +13,7 @@ export default function ContatoPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-20 bg-brand-900 text-white text-center">
+      <section className="py-12 md:py-20 bg-brand-900 text-white text-center">
         <div className="container mx-auto px-4">
           <h1 className="font-heading text-4xl md:text-5xl font-bold">Contato</h1>
           <p className="mt-4 text-lg text-white/85 max-w-2xl mx-auto">
@@ -23,7 +23,7 @@ export default function ContatoPage() {
       </section>
 
       {/* Contact cards */}
-      <section className="py-20 bg-white">
+      <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4 grid gap-8 md:grid-cols-3 max-w-5xl">
           {/* WhatsApp */}
           <a

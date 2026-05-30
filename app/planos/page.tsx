@@ -19,7 +19,7 @@ export default function PlanosPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-brand-900 py-20 text-white text-center">
+      <section className="bg-brand-900 py-12 md:py-20 text-white text-center">
         <div className="container mx-auto px-4">
           <h1 className="font-heading text-4xl md:text-5xl font-bold">
             {PRICING.hero.title}
@@ -31,7 +31,7 @@ export default function PlanosPage() {
       </section>
 
       {/* Pricing Cards */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-12 md:py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
             {PRICING.plans.map((plan) => (
@@ -103,7 +103,7 @@ export default function PlanosPage() {
       </section>
 
       {/* Enterprise / 50+ PJs */}
-      <section className="py-20 bg-white">
+      <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4 max-w-2xl text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900">
             {PRICING.enterprise.title}{" "}

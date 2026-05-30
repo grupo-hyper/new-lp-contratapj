@@ -13,7 +13,7 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-brand-900 py-20 text-white text-center">
+      <section className="bg-brand-900 py-12 md:py-20 text-white text-center">
         <div className="container mx-auto px-4">
           <h1 className="font-heading text-4xl md:text-5xl font-bold">Blog ContrataPJ</h1>
           <p className="mt-4 text-lg text-blue-200 max-w-2xl mx-auto">
@@ -24,7 +24,7 @@ export default function BlogPage() {
       </section>
 
       {/* Post Grid */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-12 md:py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {BLOG_POSTS.map((post) => (

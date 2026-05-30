@@ -4,7 +4,7 @@ import { SITE } from "@/lib/content";
 
 export function CTASection() {
   return (
-    <section className="py-20 bg-brand-900 text-white">
+    <section className="py-12 md:py-20 bg-brand-900 text-white">
       <div className="container mx-auto px-4 grid gap-10 md:grid-cols-2 items-center">
         <div>
           <h2 className="font-heading text-3xl md:text-4xl font-bold leading-tight">
@@ -30,7 +30,7 @@ export function CTASection() {
         <div className="relative h-72 md:h-96">
           <Image
             src="/images/img-cta-final-1.png"
-            alt="ContrataPJ"
+            alt="Demonstração da plataforma ContrataPJ"
             fill
             className="object-contain"
           />
