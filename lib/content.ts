@@ -124,3 +124,47 @@ export const PRICING = {
   // To be filled in Task 5.2 (Planos page) after scraping prices from original
   plans: [] as Array<{ name: string; price: string; features: string[]; ctaLabel: string }>,
 };
+
+export const FEATURES_PAGE = {
+  hero: {
+    title: "Recursos e funcionalidades da ContrataPJ",
+    subtitle: "Todos os recursos da ContrataPJ",
+  },
+  sections: [
+    {
+      id: "gestao-pj",
+      title: "Gestão de Prestadores",
+      description:
+        "Tudo sobre seus prestadores em um lugar só! Gerencie cadastros, contratos e relatórios dos seus PJs de forma simples e organizada. Onboarding facilitado, base central de prestadores, relatórios e importação em massa.",
+      image: "/images/img-home-dash1-1024x765.png",
+    },
+    {
+      id: "contratos",
+      title: "Gestão de Contratos",
+      description:
+        "Gestão completa de contratos: digitalize todo o ciclo contratual, crie, assine, armazene e acompanhe contratos com segurança. Receba alertas automáticos, utilize modelos validados e conte com análises jurídicas assistidas por IA.",
+      image: "/images/img-home-contract.png",
+    },
+    {
+      id: "notas",
+      title: "Notas Fiscais",
+      description:
+        "Gerencie notas fiscais com rapidez e facilidade. Aprovação rápida, alertas inteligentes e dashboard para controle total. Sugestão de nota automática, controle e aprovação de notas, notificações inteligentes e dashboard de notas.",
+      image: "/images/img-home-notas-1.png",
+    },
+    {
+      id: "pagamento",
+      title: "Controle Financeiro",
+      description:
+        "Controle ágil e prático de pagamentos. Pague notas via PIX em lote, controle pagamentos, gere relatórios e integre com ERPs — tudo com alertas e dashboard.",
+      image: "/images/img-home-dash2-1024x765.png",
+    },
+    {
+      id: "dashboard",
+      title: "Dashboards e Relatórios",
+      description:
+        "Tenha todo o suporte necessário para sua gestão. Monitore sua operação com painéis analíticos, receba alertas inteligentes e conte com suporte contínuo. Tudo automatizado para você não perder prazos e decisões importantes.",
+      image: "/images/img-home-dash3-1024x765.png",
+    },
+  ],
+} as const;
