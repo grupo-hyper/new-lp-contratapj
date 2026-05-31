@@ -7,6 +7,7 @@ export const SITE = {
 };
 
 export const NAV = [
+  { label: "Início", href: "/" },
   { label: "Funcionalidades", href: "/funcionalidades" },
   { label: "Planos", href: "/planos" },
   { label: "Blog", href: "/blog" },
@@ -278,6 +279,31 @@ export const HELP_CENTER = {
     },
   ],
 } as const;
+
+export const REASONS = {
+  empresas: [
+    { number: 1, title: "Onboarding desburocratizado" },
+    { number: 2, title: "Emissão de contratos automatizados" },
+    { number: 3, title: "Gestão e emissão de pagamentos" },
+    { number: 4, title: "Integração com ERP financeiro" },
+    { number: 5, title: "Relatórios para o jurídico" },
+    { number: 6, title: "Dashboards automatizados" },
+  ],
+  prestadores: [
+    { number: 1, title: "Onboarding facilitado" },
+    { number: 2, title: "Abertura de empresa" },
+    { number: 3, title: "Geração de notas fiscais" },
+    { number: 4, title: "Pagamento de DAS" },
+    { number: 5, title: "Assinatura de contratos" },
+    { number: 6, title: "Monitoramento do CNPJ" },
+  ],
+};
+
+export const CASE_VIDEOS = [
+  { id: "UdPMVfEq71g", title: "Caso de sucesso — Como a ContrataPJ transformou a gestão de PJs" },
+  { id: "8y-1qXAsyYQ", title: "Caso de sucesso — Simplificando contratos e pagamentos com a ContrataPJ" },
+  { id: "-WiZDMxpGTE", title: "Caso de sucesso — Gestão completa de prestadores com a ContrataPJ" },
+];
 
 export const FEATURES_PAGE = {
   hero: {
