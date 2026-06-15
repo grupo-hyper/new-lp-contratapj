@@ -9,7 +9,6 @@ export const SITE = {
 export const NAV = [
   { label: "Início", href: "/" },
   { label: "Funcionalidades", href: "/funcionalidades" },
-  { label: "Planos", href: "/planos" },
   { label: "Blog", href: "/blog" },
   { label: "Contato", href: "/contato" },
   { label: "Central de Ajuda", href: "/central-de-ajuda" },

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ShinyButton } from "@/components/ui/shiny-button";
 import {
   Sheet,
   SheetContent,
@@ -37,18 +38,15 @@ export function MobileMenu() {
             </Link>
           ))}
           <div className="mt-4 flex flex-col gap-2">
-            <Button
-              render={
-                <a
-                  href={SITE.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                />
-              }
-              className="bg-brand-900 hover:bg-brand-800 text-white"
+            <ShinyButton
+              href={SITE.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              size="sm"
+              className="w-full"
             >
               Solicitar Demonstração
-            </Button>
+            </ShinyButton>
             <Button
               render={
                 <a

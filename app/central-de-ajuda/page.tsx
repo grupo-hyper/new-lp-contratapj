@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { ShinyButton } from "@/components/ui/shiny-button";
 import { HELP_CENTER, SITE } from "@/lib/content";
 import type { Metadata } from "next";
 
@@ -67,14 +68,13 @@ export default function CentralDeAjudaPage() {
           <p className="text-slate-600 mb-6">
             Nossa equipe de suporte está disponível para ajudar você.
           </p>
-          <a
+          <ShinyButton
             href={SITE.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#5A4FF3] text-white font-semibold px-8 py-3 rounded-lg hover:bg-[#4a3fd4] transition-colors"
           >
             Falar com o suporte
-          </a>
+          </ShinyButton>
         </div>
       </section>
     </main>

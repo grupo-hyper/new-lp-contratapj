@@ -1,37 +1,27 @@
-import Image from "next/image";
+"use client";
+
+import { Users, FileText, Receipt, CreditCard } from "lucide-react";
+import { FeatureCarousel } from "@/components/ui/feature-carousel";
 import { HOME } from "@/lib/content";
+
+const ICONS = [Users, FileText, Receipt, CreditCard];
+
+const features = HOME.features.map((f, i) => ({
+  id: i + 1,
+  icon: ICONS[i],
+  title: f.title,
+  description: f.description,
+  image: f.image,
+}));
 
 export function Features() {
   return (
-    <section className="py-12 md:py-20 bg-slate-50">
+    <section className="py-16 md:py-24 bg-slate-50">
       <div className="container mx-auto px-4">
-        <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-slate-900 max-w-3xl mx-auto">
+        <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-slate-900 max-w-3xl mx-auto mb-12 md:mb-16">
           Tudo o que você precisa para gerenciar seus PJs em um só lugar
         </h2>
-        <div className="mt-10 md:mt-14 grid gap-8 grid-cols-1 md:grid-cols-2">
-          {HOME.features.map((f) => (
-            <div
-              key={f.title}
-              className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100"
-            >
-              <div className="aspect-[4/3] rounded-lg overflow-hidden bg-slate-100 mb-4">
-                <Image
-                  src={f.image}
-                  alt={f.title}
-                  width={800}
-                  height={600}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="font-heading text-xl font-semibold text-slate-900">
-                {f.title}
-              </h3>
-              <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                {f.description}
-              </p>
-            </div>
-          ))}
-        </div>
+        <FeatureCarousel features={features} />
       </div>
     </section>
   );

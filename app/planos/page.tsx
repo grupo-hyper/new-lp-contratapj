@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Check } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ShinyButton } from "@/components/ui/shiny-button";
 import {
   Card,
   CardContent,
@@ -77,23 +77,14 @@ export default function PlanosPage() {
                   </ul>
 
                   <div className="mt-8">
-                    <Button
-                      size="lg"
-                      className={`w-full ${
-                        plan.highlighted
-                          ? "bg-brand-600 hover:bg-brand-700 text-white"
-                          : ""
-                      }`}
-                      render={
-                        <a
-                          href={SITE.whatsapp}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        />
-                      }
+                    <ShinyButton
+                      href={SITE.whatsapp}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full"
                     >
                       {plan.ctaLabel}
-                    </Button>
+                    </ShinyButton>
                   </div>
                 </CardContent>
               </Card>
@@ -123,18 +114,13 @@ export default function PlanosPage() {
           </ul>
 
           <div className="mt-10">
-            <Button
-              size="lg"
-              render={
-                <a
-                  href={SITE.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                />
-              }
+            <ShinyButton
+              href={SITE.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {PRICING.enterprise.ctaLabel}
-            </Button>
+            </ShinyButton>
           </div>
         </div>
       </section>

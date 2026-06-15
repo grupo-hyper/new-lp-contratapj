@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Button } from "@/components/ui/button";
+import { ShinyButton } from "@/components/ui/shiny-button";
 import { SITE } from "@/lib/content";
 import { Mail, Phone, MessageCircle } from "lucide-react";
 
@@ -59,19 +59,13 @@ export default function ContatoPage() {
 
         {/* CTA */}
         <div className="container mx-auto px-4 mt-12 text-center">
-          <Button
-            size="lg"
-            className="bg-brand-900 hover:bg-brand-800 rounded-full px-8"
-            render={
-              <a
-                href={SITE.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-              />
-            }
+          <ShinyButton
+            href={SITE.whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Solicitar demonstração agora
-          </Button>
+          </ShinyButton>
         </div>
       </section>
     </>
