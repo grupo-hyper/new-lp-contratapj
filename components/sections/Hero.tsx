@@ -1,10 +1,16 @@
 import { ShinyButton } from "@/components/ui/shiny-button";
-import { YouTubeCard } from "@/components/ui/youtube-card";
 import { HOME, SITE } from "@/lib/content";
 
 export function Hero() {
   return (
-    <section className="relative w-full overflow-hidden bg-brand-950">
+    <section
+      className="relative w-full overflow-hidden bg-brand-950"
+      style={{
+        backgroundImage:
+          "linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px),radial-gradient(circle at 80% 15%, rgba(37,99,235,0.40), transparent 42%),radial-gradient(circle at 8% 95%, rgba(37,99,235,0.22), transparent 45%)",
+        backgroundSize: "46px 46px,46px 46px,100% 100%,100% 100%",
+      }}
+    >
       <div className="container mx-auto px-4 py-20 lg:py-28 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           {/* Left: text + CTA */}
@@ -27,9 +33,14 @@ export function Hero() {
             </ShinyButton>
           </div>
 
-          {/* Right: video */}
+          {/* Right: device mockup illustration */}
           <div className="flex-1 w-full">
-            <YouTubeCard videoId={SITE.videoId} className="w-full" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/hero-mockup.svg"
+              alt="Plataforma ContrataPJ no notebook e no celular"
+              className="w-full"
+            />
           </div>
         </div>
       </div>
